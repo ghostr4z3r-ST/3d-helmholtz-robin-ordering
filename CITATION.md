@@ -8,3 +8,10 @@ Before public release, update:
 - repository URL
 - Zenodo DOI
 - arXiv identifier of the paper
+
+
+## Released archive
+
+Zenodo DOI for the public repository release **v1.0.0**: **10.5281/zenodo.19236767**.
+
+Repository URL: https://github.com/ghostr4z3r-ST/3d-helmholtz-robin-ordering
