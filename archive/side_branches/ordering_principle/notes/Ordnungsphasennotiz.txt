@@ -1,0 +1,14 @@
+## Ordnungsphasen-Notiz
+
+Die bisherigen Kontinuationsrechnungen sprechen dafür, dass die **Gleichwertigkeit der drei Raumrichtungen** ein zentraler Ordnungsfaktor im untersuchten 3D-Helmholtz-Robin-System ist. Im **kubischen** Fall bleiben gemischte, volumetrischere Ordnungsfamilien möglich. Sobald diese Gleichwertigkeit durch tetragonale oder orthorhombische Verzerrung gebrochen wird, kippt die bevorzugte `xyz`-tragende Ordnung früh in **achsengebundene Familien** wie `Z1` oder `Y1`.
+
+Dieser Umschlag zeigt sich besonders klar für **kleine bis moderate Robin-Kopplung** (\(\beta=0\) und \(\beta=1\)). Dort reicht bereits milde Anisotropie, um die Ordnung von gemischteren volumetrischen Familien in eine ausgezeichnete Achse zu lenken. Für **größere Robin-Kopplung** (\(\beta=5\)) erscheinen wieder häufiger **gemischte \(q\)-Familien**, was darauf hindeutet, dass Robin die durch Geometrie gesetzte Achsenbindung teilweise wieder auflockern kann.
+
+Damit ergibt sich als vorläufiges Ordnungsprinzip:
+
+> **Kubische Richtungs-Gleichwertigkeit hält gemischte volumetrische Ordnungsfamilien offen; geometrische Anisotropie bevorzugt achsengebundene Ordnung; Robin selektiert und moduliert den Umschlag zwischen beiden.**
+
+Wichtig ist, dass dieser Befund nicht auf einem einzelnen Auswahlkriterium beruht. Die Tendenz erscheint in beiden getesteten Kriterien wieder: einmal in der Lesung nach starker `xyz`-Ordnung mit klarem \(q\)-Kontrast und einmal in der Lesung nach starker `xyz`-Ordnung mit möglichst isotroper Feldverteilung. Das erhöht die Glaubwürdigkeit des Übergangsbildes.
+
+Die Notiz markiert keinen endgültigen Phasensatz, sondern einen belastbaren Arbeitsstand:  
+**Die bevorzugte Ordnungsfamilie ist nicht nur vom Operator, sondern wesentlich auch von der geometrischen Gleichwertigkeit der Raumrichtungen und von der Robin-Selektion bestimmt.**

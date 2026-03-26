@@ -1,0 +1,18 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Unless otherwise noted, the following non-code material in this repository is licensed under CC BY 4.0:
+
+- Markdown documentation in `docs/`
+- Versioned CSV result files in `results/`
+- PNG and JPEG figures included in the repository
+- Short provenance notes in `archive/`
+
+You may share and adapt this material for any purpose, including commercially,
+as long as you give appropriate credit, provide a link to the license, and
+indicate if changes were made.
+
+Human-readable summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode

@@ -1,0 +1,4 @@
+family,dominant_local_carrier,polarization_mean,polarization_range,peak_family_stability_over_beta,mean_peak_contrast,peak_contrast_std,resolution_note,interpretation
+primitive,center vs faces,-0.28612465290843825,-0.374..-0.041,0.5,0.7637221435437812,0.089040963308461,β=1: X2+Y2+Z2; β=5: X2+Y2+Z2,finite-q volumetric cubic order
+fcc,center vs faces,-0.38564715327553317,-0.544..-0.315,0.8333333333333334,0.7829808040492702,0.1147376422547007,β=1: X1+Y1+Z1; β=5: X1+Y1+Z1,face-centered cubic order
+bcc,body centers vs corners,-0.7253941398118946,-0.810..-0.680,0.8333333333333334,0.7519239065792624,0.04332231051959,β=1: X2+Y2+Z2; β=5: X2+Y2+Z2,corner-dominant bcc-like order

@@ -1,0 +1,19 @@
+## Prinzipien-Notiz
+
+1. **3D-Helmholtz** ist im bisherigen Stand der eigentliche Strukturträger des Modells. Die grundlegende Moden- und Ordnungslandschaft entsteht bereits aus dem volumetrischen Eigenwertproblem selbst.
+
+2. **Robin-Kopplung** erzeugt diese Ordnung nicht neu, sondern wirkt als **Selektionsparameter**. Sie verschiebt, stabilisiert oder moduliert, welche Ordnungsfamilie spektral und gitterseitig bevorzugt wird.
+
+3. Die relevante Ordnung ist **volumetrisch primär**. Natürliche Flächen-Observablen tragen sie nur unvollständig, und selbst statistisches Flächenabtasten rekonstruiert sie nicht robust auf Volumenniveau.
+
+4. Die **hexaedrisch/kubische Klasse** ist der stärkste geometrische Träger der bisher gefundenen Ordnung. Nicht die bloße Existenz von `xyz` ist entscheidend, sondern ihre **hierarchische Einbettung**.
+
+5. Innerhalb der kubischen Familie bleibt **primitive kubisch** die modellnächste Lesung. **fcc** bildet den robusten flächengetragenen Gegenpol, während **bcc** bislang nicht als bevorzugte body-centered Hauptordnung erscheint.
+
+6. Die bevorzugte Ordnungsfamilie hängt wesentlich von der **Gleichwertigkeit der drei Raumrichtungen** ab. Kubische Gleichwertigkeit hält gemischte volumetrische Familien offen; geometrische Anisotropie kippt früh in achsengebundene Ordnung.
+
+7. Die erste physikalisch lesbare Signatur des Modells liegt nicht in einem Einzelwert, sondern in einer **Ordnungsdiagnostik** aus
+   - Peakfamilie,
+   - Ordnungsvektor,
+   - Sublattice-Polarisation
+   - und Volumen-vs.-Fläche-Lesbarkeit.

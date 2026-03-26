@@ -1,0 +1,21 @@
+# Fill in final author names and DOI before the public Zenodo release.
+cff-version: 1.2.0
+message: "If you use this repository, please cite the repository release and the accompanying Paper 1 preprint."
+title: "3d-helmholtz-robin-ordering"
+type: software
+version: 1.0.0
+date-released: 2026-03-26
+license: MIT
+abstract: >-
+  Public reproducibility repository for the numerical 3D Helmholtz–Robin core,
+  including the main strand, null-model hardening block, and three diagnostic side branches.
+keywords:
+  - Helmholtz-Robin
+  - numerical analysis
+  - eigenvalue problem
+  - reproducibility
+  - geometric ordering
+
+authors:
+  - family-names: "Trümpert"
+    given-names: "Steven"

@@ -1,0 +1,18 @@
+# Python build / cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated results (keep versioned reference data)
+results/reproduced/
+results/tmp/
+*.log
