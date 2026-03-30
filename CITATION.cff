@@ -1,24 +1,29 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the repository release and the accompanying Paper 1 preprint."
+message: "If you use this repository, please cite the latest released archive on Zenodo together with the accompanying manuscript."
 title: "3d-helmholtz-robin-ordering"
 type: software
-version: 1.0.0
-date-released: 2026-03-26
 license: MIT
 abstract: >-
-  Public reproducibility repository for the numerical 3D Helmholtz–Robin core,
-  including the main strand, null-model hardening block, and three diagnostic side branches.
+  Companion reproducibility repository for the manuscript
+  "Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries",
+  containing the curated numerical analysis code, runnable scripts, and reference outputs needed to reproduce the reported results.
 keywords:
   - Helmholtz-Robin
   - numerical analysis
+  - finite elements
   - eigenvalue problem
   - reproducibility
-  - geometric ordering
-
 authors:
   - family-names: "Trümpert"
     given-names: "Steven"
-
+    email: "StevenTruempert@hotmail.de"
 doi: "10.5281/zenodo.19236767"
 repository-code: "https://github.com/ghostr4z3r-ST/3d-helmholtz-robin-ordering"
 url: "https://doi.org/10.5281/zenodo.19236767"
+preferred-citation:
+  type: article
+  title: "Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries"
+  authors:
+    - family-names: "Trümpert"
+      given-names: "Steven"
+      email: "StevenTruempert@hotmail.de"

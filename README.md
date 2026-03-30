@@ -1,58 +1,47 @@
 # 3d-helmholtz-robin-ordering
 
-Companion reproducibility repository for the paper **Artifact-Hardened Ordering in a 3D Helmholtz-Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries** by **Steven Trümpert**.
+Companion reproducibility repository for the manuscript **Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries** by **Steven Trümpert**.
 
-Public reproducibility repository for **Paper 1** on the numerical 3D Helmholtz–Robin core.
+This repository is intentionally focused on one task: enabling external readers to reproduce the numerical analyses underlying the manuscript. It is **not** intended to serve as a public research diary or a complete reconstruction archive of every intermediate project phase.
 
-This repository is meant to do one job well: provide a clear, auditable backbone for the later paper without forcing the manuscript itself to carry every technical detail.
+## What this repository contains
 
-## Scope
+This repository provides:
 
-This release covers the full Paper-1 package:
+- curated source code in `src/paper1/` for the reusable numerical core,
+- runnable analysis scripts in `scripts/`,
+- reference outputs in `results/` for the analyses reported in the manuscript,
+- a minimal archive of legacy source files in `archive/` only where current wrapper scripts still depend on them,
+- concise reader-facing documentation in `docs/`.
 
-- the **main strand** from the cube solver to the supercell readouts,
-- the **null-model / blind-test block**,
-- the **face-diagnosis** side branch,
-- the **field-information** side branch,
-- and the **explicit ordering-principle** side branch.
+## Manuscript scope covered here
 
-The repository is intentionally split into a small number of layers:
+The repository covers the numerical analyses corresponding to the manuscript sections on:
 
-- `src/paper1/` contains curated reusable code for the core numerical pieces.
-- `scripts/` contains runnable entry points and wrappers.
-- `results/` contains versioned reference outputs that anchor the paper claims.
-- `archive/` contains recovered historical source files that are still useful for provenance.
-- `docs/` explains what is direct, historical, reconstructed, and intended for the paper.
-
-## Reproducibility levels
-
-This repo distinguishes three levels of material:
-
-1. **Curated core**  
-   Clean modules and scripts intended for direct use.
-
-2. **Recovered historical scripts**  
-   Original files from the research history, wrapped so that old local paths are not required.
-
-3. **Reconstructed support files**  
-   Only used where a historical source survived merely as a stub. These files are explicitly marked.
+- low-mode ordering in the cubic kernel,
+- emergent center readout and Helmholtz/Robin role separation,
+- geometric hardening across cube-like geometries,
+- lattice-linked readout and family signatures,
+- null models and selective hardening,
+- face-diagnosis, field-information, and ordering-principle support analyses where they are used as manuscript support rather than as standalone narratives.
 
 ## Quickstart
 
-Create a Python environment with Python 3.10+ and install the package:
+Use Python 3.10+.
 
 ```bash
 python -m pip install -e .
 ```
 
-Run the main curated core:
+Run the main manuscript-facing reproduction paths:
 
 ```bash
 ./scripts/reproduce_core.sh
 ./scripts/reproduce_extended.sh
+./scripts/reproduce_public_minimum.sh
 ```
 
-Run the null-model digest and branch-specific historical wrappers:
+Additional branch-specific runs:
 
 ```bash
 ./scripts/main_strand/nullmodel_blindtests/reproduce_nullmodel_digest.sh
@@ -60,34 +49,30 @@ Run the null-model digest and branch-specific historical wrappers:
 ./scripts/side_branches/field_information/reproduce_field_information_v1.sh
 ```
 
-## Paper-facing documentation
+## Start here
 
-Start with these files:
+For external readers, the most useful files are:
 
-- `docs/reproducibility_status.md`
+- `docs/manuscript_link.md`
 - `docs/repo_map.md`
-- `docs/paper_figure_map.md`
-- `docs/provenance_and_reconstructions.md`
+- `docs/reproducibility_status.md`
+- `docs/manuscript_figure_map.md`
+- `docs/forschungshistorie.md`
 
-## Public provenance policy
+## Repository and manuscript linkage
 
-The public repository includes code, reference outputs, and concise provenance notes.
-The large chat-export archive used during reconstruction is **not bundled** in this public release. It is kept outside the public repo so that the GitHub presentation stays focused on the scientific material.
+This repository belongs to the manuscript:
+
+> **Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries**
+
+The manuscript should be read as the primary narrative document. This repository supplies the code, analysis scripts, and reference outputs needed to reproduce the numerical results reported there.
+
+## Public release record
+
+- **GitHub repository:** `https://github.com/ghostr4z3r-ST/3d-helmholtz-robin-ordering`
+- **Zenodo DOI (latest released archive, v1.0.0):** `10.5281/zenodo.19236767`
 
 ## Licensing
 
-This repository uses a **split license model**:
-
-- **Code** is licensed under **MIT** (`LICENSE`).
-- **Documentation, CSV result tables, and images** are licensed under **CC BY 4.0** (`LICENSE-data`).
-
-That split is deliberate: Creative Commons is reasonable for non-code research material, but it is usually not the best choice for executable source code.
-
-## Citation
-
-A starter `CITATION.cff` is included.
-Before the public Zenodo release, fill in the final author metadata and repository DOI.
-
-## Suggested citation pairing
-
-Use this repository together with the companion arXiv preprint of the same title. Once the Zenodo release is created, add the DOI badge and cite the tagged repository release in addition to the paper.
+- **Code:** MIT (`LICENSE`)
+- **Documentation, CSV files, and figures:** CC BY 4.0 (`LICENSE-data`)

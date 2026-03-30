@@ -1,14 +1,14 @@
 # Repository map
 
-## Core numerical kernel
+## Core directories
 
-- `src/paper1/cube_fem.py`
-- `src/paper1/hexa_fem.py`
-- `src/paper1/tetra_fem.py`
-- `src/paper1/octant.py`
-- `src/paper1/center_emergence.py`
+- `src/paper1/` — curated reusable numerical code
+- `scripts/` — runnable manuscript-facing entry points
+- `results/` — reference outputs used to anchor the manuscript analyses
+- `docs/` — concise reader-facing guidance
+- `archive/` — minimal legacy material still required by some wrapper scripts
 
-## Main-strand scripts
+## Main manuscript-facing scripts
 
 - `scripts/01_cube_solver_basics.py`
 - `scripts/02_geometry_center_readout.py`
@@ -18,42 +18,16 @@
 - `scripts/06_primitive_cubic_supercell.py`
 - `scripts/07_fcc_supercell_readout.py`
 
-## Main-strand hardening block
+## Extended support scripts
 
-- `scripts/main_strand/nullmodel_blindtests/01_reference_digest.py`
-- `scripts/main_strand/nullmodel_blindtests/02_label_shuffle_permutation_tests.py`
-- `scripts/main_strand/nullmodel_blindtests/03_feature_ablation_tests_reduced.py`
-- `scripts/main_strand/nullmodel_blindtests/04_field_shuffle_cube_null_tests.py`
-- `scripts/main_strand/nullmodel_blindtests/05_field_shuffle_supercell_reconstructed.py`
+- `scripts/main_strand/nullmodel_blindtests/`
+- `scripts/side_branches/face_diagnosis/`
+- `scripts/side_branches/field_information/`
+- `scripts/side_branches/ordering_principle/`
 
-Reference tables:
+## Reader workflow
 
-- `results/main_strand/nullmodel_blindtests/reference/`
-
-## Side branch: face diagnosis
-
-- `scripts/side_branches/face_diagnosis/01_face_information_first_test.py`
-- `scripts/side_branches/face_diagnosis/02_face_information_extended.py`
-- `scripts/side_branches/face_diagnosis/03_face_patch_scan_cube.py`
-- `scripts/side_branches/face_diagnosis/04_face_patch_scan_supercell.py`
-- `results/side_branches/face_diagnosis/reference/`
-
-## Side branch: field information
-
-- `scripts/side_branches/field_information/01_field_information_first_test.py`
-- `scripts/side_branches/field_information/02_field_information_supercell.py`
-- `results/side_branches/field_information/reference/`
-
-## Side branch: explicit ordering principle
-
-- `scripts/side_branches/ordering_principle/01_geometry_continuation_study.py`
-- `scripts/side_branches/ordering_principle/02_geometry_phase_map.py`
-- `results/side_branches/ordering_principle/reference/`
-
-## Historical provenance retained publicly
-
-- `archive/original_scripts/`
-- `archive/main_strand/nullmodel_blindtests/original_scripts/`
-- `archive/side_branches/*/original_scripts/`
-
-Large chat-export logs are intentionally not part of the public release.
+1. Read `docs/manuscript_link.md`
+2. Check `docs/reproducibility_status.md`
+3. Run `scripts/reproduce_public_minimum.sh`
+4. Inspect relevant reference outputs under `results/`

@@ -1,31 +1,23 @@
 # Reproducibility status
 
-## Directly runnable from this public repo
+This repository accompanies the manuscript **Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries**.
 
-- cube solver, convergence scan, and basic β scan,
-- geometry-center readout for cube / quader / deformed hexahedron,
-- tetrahedron control,
-- first hexahedral shear study,
-- primitive-cubic supercell readout,
-- fcc supercell readout,
-- face-diagnosis branch,
-- field-information branch,
-- geometry continuation and phase-map branch,
-- null-model reference digest.
+## Status summary
 
-## Historical wrappers included
+The repository is intended to reproduce the numerical analyses reported in the manuscript.
 
-Several later steps are run through wrappers around recovered historical scripts.
-This keeps the public paths clean while preserving the original numerical logic.
+### Directly runnable curated core
 
-## Reconstructed or partial-provenance items
+- low-mode cube solver and center readout
+- tetrahedron control
+- geometric hardening on deformed hexahedra
+- primitive-cubic and fcc lattice-linked readouts
 
-Two files remain provenance-qualified rather than fully original-source-complete:
+### Supported by wrapper scripts
 
-- `field_shuffle_supercell_null_tests.py` survived historically only as a stub, so the repo ships an explicitly marked reconstruction.
-- `supercell_qdominated_field_shuffle.py` is preserved only as a stub; the scientifically important artifact here is the versioned reference CSV.
+Some manuscript-supporting analyses still run through thin wrappers around legacy source files preserved in `archive/`.
+These wrappers are kept only where they remain useful for reproduction.
 
-## Practical reading for the paper
+### Reconstructed component
 
-For Paper 1, this is now strong enough to serve as the reproducibility backbone.
-The remaining caveat is provenance transparency, not missing numerical substance.
+One supercell field-shuffle component survives publicly only as a reconstruction because the recovered original script was a stub. This is explicitly marked in the relevant script and documentation.

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "paper1-robin-ordering"
 version = "0.8.0"
-description = "Public reproducibility repository for Paper 1: numerical Helmholtz-Robin ordering in 3D"
+description = "Companion reproducibility repository for the manuscript Reproducible Low-Mode Ordering in a 3D Helmholtz--Robin Eigenproblem on Cube-Like and Lattice-Linked Geometries"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
