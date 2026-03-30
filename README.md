@@ -70,7 +70,7 @@ The manuscript should be read as the primary narrative document. This repository
 ## Public release record
 
 - **GitHub repository:** `https://github.com/ghostr4z3r-ST/3d-helmholtz-robin-ordering`
-- **Zenodo DOI (latest released archive, v1.0.0):** `10.5281/zenodo.19236767`
+- **Zenodo DOI (latest released archive, v1.1.0):** `[10.5281/zenodo.19236767](https://doi.org/10.5281/zenodo.19335898)`
 
 ## Licensing
 
